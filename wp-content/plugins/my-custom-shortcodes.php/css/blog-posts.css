@@ -1,0 +1,146 @@
+/* Định dạng danh sách bài viết */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-thumbnail {
+    margin-right: 15px;
+}
+
+.post-thumbnail img {
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-content {
+    flex-grow: 1;
+    width: 140%;
+    overflow: hidden;
+}
+
+.post-content a {
+    white-space: nowrap;   
+    overflow: hidden;
+    text-overflow: ellipsis;  
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    color: #0073e6;
+}
+
+.post-content p {
+    font-size: 14px;
+    color: #666;
+}
+
+.post-title-popular {
+    background-color: #1a63ae;
+    width: 140px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Phân trang */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a,
+.pagination span {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #f4f4f4;
+    color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .current {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.pagination .prev,
+.pagination .next {
+    background-color: #f4f4f4;
+    color: #007bff;
+}
+
+.pagination .prev:hover,
+.pagination .next:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    margin: 8px 0;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-link:hover {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+.category-link.active {
+    background-color: #0073e6;
+    color: white;
+    font-weight: bold;
+}
+
+.category-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.category-item a {
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: #0073e6;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-item a:hover {
+    background-color: #0073e6;
+    color: white;
+}

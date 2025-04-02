@@ -1,0 +1,96 @@
+:root {
+    --color-primary:#b82a6f !important;
+    --color-primary-bg:#aefff652 !important;
+    --box-shadow:0px 9px 15px #aeb5ff52 !important;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size:16px;
+    background: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: inherit;
+}
+a{
+    transition: 0.5s;
+    color: var(--color-primary);
+}
+
+input[type="submit"] {
+    border: 1px solid var(--color-gray);
+    border-radius: 0; 
+    font-size: 16px;
+}
+
+.menu-bar.text-center,
+.site-footer {
+    background: var(---light-body);
+}
+span.posted-on time:first-child {
+    margin-right: 10px;
+}
+.header .header-top {
+    background: #fafafa;
+}
+.header .search-box input.search-field {
+    border: 1px solid transparent;
+}
+.header .header-middle {
+    padding: 20px 0;
+}
+.widget h2,
+h2.widget-title {
+    border-bottom: 2px solid var(--color-primary);
+    padding-bottom: 8px;
+    padding-left: 0;
+    border-left: 0;
+}
+.main-navigation ul li a{
+    text-transform: none;
+    font-size: 15px;
+}
+aside#secondary {
+    position: sticky;
+    top: 40px;
+}
+.nx-list-item .single-nx-list-item{
+    margin-bottom: 4rem;
+}
+.nx-list-item .nx-single-list-details {
+    padding: 20px 10px 20px 35px;
+}
+.nx-list-item .nx-single-list-img {
+    flex: 0 0 40%;
+}
+.nx-list-item .nx-list-title a {
+    font-size: 28px;
+}
+html body a.newsx-paper-readmore {
+    font-size: 14px;
+}
+.nx-list-item .nx-single-list-img img {
+    border-radius: 10px;
+}
+a.newsx-paper-readmore:hover {
+    color: var(--color-black);
+}
+section.widget.bg-light {
+    background: transparent !important;
+}
+.pagination .nav-links a,
+.pagination .nav-links span{
+    box-shadow: inherit !important;
+    background: var(---light-body);
+}
+@media (max-width: 767px) {
+    .nx-list-item .single-nx-list-item{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+    .nx-list-item .nx-single-list-img {
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+    }
+}

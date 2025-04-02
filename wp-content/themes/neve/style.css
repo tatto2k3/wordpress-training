@@ -17,3 +17,54 @@ WordPress Available:  yes
 Requires License:     no
 Tags: blog, custom-logo, e-commerce, rtl-language-support, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, accessibility-ready, wide-blocks, block-styles, footer-widgets, portfolio, left-sidebar, right-sidebar
 */
+
+/* Định dạng header */
+#header-blog {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo > a > img {
+    max-width: 50% !important;
+}
+
+nav {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #333;
+    font-size: 16px; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #0073e6; 
+}
+
+
+

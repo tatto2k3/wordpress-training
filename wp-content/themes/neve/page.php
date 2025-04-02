@@ -7,7 +7,11 @@
  */
 $container_class = apply_filters( 'neve_container_class_filter', 'container', 'single-page' );
 
-get_header();
+if (is_page('blog')) {
+	get_header('blog');
+} else {
+	get_header();
+}
 
 $context = class_exists( 'WooCommerce', false ) && ( is_cart() || is_checkout() || is_account_page() ) ? 'woo-page' : 'single-page';
 ?>
